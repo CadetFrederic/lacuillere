@@ -1,0 +1,11 @@
+<h1>Results for the research</h1>
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li>
+      <h2><%= restaurant[:name] %></h2>
+      <p>address: <%= restaurant[:address] %> category: <%= restaurant[:category] %></p>
+    </li>
+    <% end %>
+</ul>
+
+<%= link_to 'Go back', restaurants_index_path %>

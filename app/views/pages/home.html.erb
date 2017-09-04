@@ -1,0 +1,11 @@
+<h1>Home page for la Cuillere</h1>
+<h1>Today is <%= @today %></h1>
+
+
+<form action="/restaurants" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input type="text" name="name" placeholder="name of the restaurant">
+  <input type="text" name="address" placeholder="address of the restaurant">
+  <input type="text" name="category" placeholder="category of the restaurant">
+  <input type="submit">
+</form>
